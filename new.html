@@ -15,7 +15,7 @@
   </header>
   <div class="container">
    <div id="main" class="card card-body">
-    <h2 class="title text-success fw-bold">ADD ITEM</h2>
+    <h2 class="title text-success ">ADD ITEM</h2>
     <form class="form-inline mb-3">
       <input type="text" class="form-control mr-2">
       <input type="submit" class="btn btn-dark" value="Submit">
@@ -31,11 +31,18 @@
   </div>
   <script>
 
-  var li = document.getElementsByTagName('li');
-  li[2].style.backgroundColor = 'green';
-   for(var i=0; i<li.length; i++){
-    li[i].style.fontWeight = 'bold';
-  } 
+ // var li = document.getElementsByTagName('li');
+  //li[2].style.backgroundColor = 'green';
+   //for(var i=0; i<li.length; i++){
+   // li[i].style.fontWeight = 'bold';
+  //} 
+
+  var seconditem = document.querySelector('.list-group-item:nth-child(2)');
+  seconditem.style.backgroundColor = 'green';
+
+  var thirditem = document.querySelector('.list-group-item:nth-child(3)');
+  thirditem.style.display = 'none';
+  
  </script>
 </body>
 
